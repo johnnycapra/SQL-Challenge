@@ -1,45 +1,39 @@
 # SQL-Challenge
 
-# Background
-It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). Your first major task is to do a research project about people whom the company employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
+## Background
 
-For this project, you’ll design the tables to hold the data from the CSV files, import the CSV files into a SQL database, and then answer questions about the data. That is, you’ll perform data modeling, data engineering, and data analysis, respectively.
+Welcome to the SQL-Challenge! In this project, you will be working as a data engineer at Pewlett Hackard, a fictional company. Your primary task is to conduct a research project focusing on employees from the 1980s and 1990s using the company's historical employee database, which is stored in six CSV files.
 
-# Instructions
-This Challenge is divided into three parts: data modeling, data engineering, and data analysis.
+Your mission includes designing tables to store data from these CSV files, importing the data into a SQL database, and then performing data analysis. The project is divided into three main parts: data modeling, data engineering, and data analysis.
 
-# Data Modeling
-Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tables. To create the sketch, feel free to use a tool like QuickDBDLinks to an external site..
+## Instructions
 
-# Data Engineering
-Use the provided information to create a table schema for each of the six CSV files. Be sure to do the following:
+### Data Modeling
 
-Remember to specify the data types, primary keys, foreign keys, and other constraints.
+1. Inspect the CSV files and create an Entity Relationship Diagram (ERD) for the tables. You can use tools like QuickDBD for creating the sketch.
 
-For the primary keys, verify that the column is unique. Otherwise, create a composite keyLinks to an external site., which takes two primary keys to uniquely identify a row.
+### Data Engineering
 
-Be sure to create the tables in the correct order to handle the foreign keys.
+2. Utilize the provided information to create a table schema for each of the six CSV files. Ensure to:
 
-Import each CSV file into its corresponding SQL table.
+   - Specify data types, primary keys, foreign keys, and other constraints.
+   - Verify uniqueness for primary keys or create composite keys when necessary.
+   - Create tables in the correct order to handle foreign keys.
+   - Import each CSV file into its corresponding SQL table.
 
-HINT - 
-To avoid errors, import the data in the same order as the corresponding tables got created. And, remember to account for the headers when doing the imports.
+   **Hint:** Import data in the same order as table creation, and account for headers during imports.
 
-# Data Analysis
-List the employee number, last name, first name, sex, and salary of each employee.
+### Data Analysis
 
-List the first name, last name, and hire date for the employees who were hired in 1986.
+3. Execute the following queries to derive valuable insights from the database:
 
-List the manager of each department along with their department number, department name, employee number, last name, and first name.
-
-List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
-
-List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
-
-List each employee in the Sales department, including their employee number, last name, and first name.
-
-List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+   - List the employee number, last name, first name, sex, and salary of each employee.
+   - List the first name, last name, and hire date for employees hired in 1986.
+   - List the manager of each department with their department number, department name, employee number, last name, and first name.
+   - List the department number for each employee along with their employee number, last name, first name, and department name.
+   - List the first name, last name, and sex of employees named Hercules with last names starting with B.
+   - List each employee in the Sales department with their employee number, last name, and first name.
+   - List each employee in the Sales and Development departments with their employee number, last name, first name, and department name.
+   - List the frequency counts, in descending order, of all employee last names.
 
 
